@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 230, 255);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 10px rgb(0, 0,0, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+}
+
+.profile-card::before{
+    position: absolute;
+    content: '';
+    height: 35%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 12px 12px 0 0;
+}
+.box1::before{background-color: rgb(0, 194, 228);}
+.box2::before{background-color: rgb(189, 123, 0);}
+.box3::before{background-color: rgb(199, 0, 149);}
+
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: purple;
+    padding: 3px;
+}
+
+.image .profile-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: white 3px solid;
+
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-align: justify;
+    padding: 4px;
+}
+
+
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px ;    
+}
+
+.buttons .button{
+    color: rgb(194, 3, 194);
+    font-size: 14px;
+    font-weight: 400;
+    border: rgb(194, 3, 194) 2px solid;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transform: all .3s ease;
+    background-color: transparent;
+    transition: all 0.2s ease-out;
+
+}
+.buttons .button:hover{
+    background-color: rgb(194, 3, 194);
+    color: white;
+    transition: all 0.2s ease-out;
+}
+.buttons .button_subscribe{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border: rgb(194, 3, 194) 2px solid;
+    border-radius: 4px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transform: all .3s ease;
+    background-color: rgb(194, 3, 194);
+}
+
+.stars{
+    padding: .3rem;
+}
